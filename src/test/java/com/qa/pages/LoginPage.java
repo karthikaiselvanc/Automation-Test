@@ -27,9 +27,8 @@ public class LoginPage extends TestBase{
 	@FindBy(partialLinkText="https://www.facebook.com/karthikai.selvan.37?ref=bookmarks")
 	WebElement link;
 	
-	/*@FindBy(xpath="//img[contains(@class,'img-responsive')]")
-	WebElement crmLogo;*/
-	
+	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
+	WebElement crmLogo;	
 	
 	
 	//Initializing the Page Objects:
