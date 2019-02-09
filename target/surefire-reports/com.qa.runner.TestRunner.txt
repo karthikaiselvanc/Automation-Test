@@ -1,0 +1,304 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 48.984 sec <<< FAILURE!
+Given I navigate to Facebook(Scenario: Login to Facebook)  Time elapsed: 0.066 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+3a3a9e97384}","minVersion":"63.0.3","maxVersion":"63.*"},{"id":"{aa3c5121-dab2-40e2-81ca-7ea25febc110}","minVersion":"63.0.3","maxVersion":"63.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"location":"app-system-defaults"}
+1546700029242	addons.xpi-utils	DEBUG	Updating add-on states
+1546700029245	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1546700029246	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1546700029247	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1546700029248	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1546700029254	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546700029255	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1546700029256	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1546700029257	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1546700029259	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1546700029259	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1546700029260	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1546700029261	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1546700029263	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546700029265	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546700029265	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Starting provider: GMPProvider
+1546700029268	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546700029269	addons.manager	DEBUG	Starting provider: PluginProvider
+1546700029269	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546700029274	addons.manager	DEBUG	Completed startup sequence
+1546700030562	addons.repository	DEBUG	No addons.json found.
+1546700031855	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1546700032151	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Admin\AppData\Local\Temp\anonymous6636315495786413482webdriver-profile\extensions\webdriver-staging
+1546700032152	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1546700032152	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546700032154	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-36BJ06U', ip: '192.168.0.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.qa.util.TestBase.initialization(TestBase.java:52)
+	at com.qa.stepDefinitions.HomePageSteps.i_navigate_to_Facebook(HomePageSteps.java:17)
+	at ?.Given I navigate to Facebook(src/test/java/com/qa/features/face.feature:4)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+3a3a9e97384}","minVersion":"63.0.3","maxVersion":"63.*"},{"id":"{aa3c5121-dab2-40e2-81ca-7ea25febc110}","minVersion":"63.0.3","maxVersion":"63.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"location":"app-system-defaults"}
+1546700029242	addons.xpi-utils	DEBUG	Updating add-on states
+1546700029245	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1546700029246	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1546700029247	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1546700029248	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1546700029254	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546700029255	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1546700029256	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1546700029257	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1546700029259	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1546700029259	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1546700029260	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1546700029261	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1546700029263	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546700029265	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546700029265	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Starting provider: GMPProvider
+1546700029268	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546700029269	addons.manager	DEBUG	Starting provider: PluginProvider
+1546700029269	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546700029274	addons.manager	DEBUG	Completed startup sequence
+1546700030562	addons.repository	DEBUG	No addons.json found.
+1546700031855	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1546700032151	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Admin\AppData\Local\Temp\anonymous6636315495786413482webdriver-profile\extensions\webdriver-staging
+1546700032152	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1546700032152	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546700032154	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.qa.util.TestBase.initialization(TestBase.java:52)
+	at com.qa.stepDefinitions.HomePageSteps.i_navigate_to_Facebook(HomePageSteps.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Scenario: Login to Facebook  Time elapsed: 0.07 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+3a3a9e97384}","minVersion":"63.0.3","maxVersion":"63.*"},{"id":"{aa3c5121-dab2-40e2-81ca-7ea25febc110}","minVersion":"63.0.3","maxVersion":"63.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"location":"app-system-defaults"}
+1546700029242	addons.xpi-utils	DEBUG	Updating add-on states
+1546700029245	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1546700029246	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1546700029247	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1546700029248	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1546700029254	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546700029255	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1546700029256	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1546700029257	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1546700029259	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1546700029259	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1546700029260	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1546700029261	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1546700029263	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546700029265	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546700029265	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Starting provider: GMPProvider
+1546700029268	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546700029269	addons.manager	DEBUG	Starting provider: PluginProvider
+1546700029269	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546700029274	addons.manager	DEBUG	Completed startup sequence
+1546700030562	addons.repository	DEBUG	No addons.json found.
+1546700031855	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1546700032151	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Admin\AppData\Local\Temp\anonymous6636315495786413482webdriver-profile\extensions\webdriver-staging
+1546700032152	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1546700032152	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546700032154	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-36BJ06U', ip: '192.168.0.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.qa.util.TestBase.initialization(TestBase.java:52)
+	at com.qa.stepDefinitions.HomePageSteps.i_navigate_to_Facebook(HomePageSteps.java:17)
+	at ?.Given I navigate to Facebook(src/test/java/com/qa/features/face.feature:4)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+3a3a9e97384}","minVersion":"63.0.3","maxVersion":"63.*"},{"id":"{aa3c5121-dab2-40e2-81ca-7ea25febc110}","minVersion":"63.0.3","maxVersion":"63.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"location":"app-system-defaults"}
+1546700029242	addons.xpi-utils	DEBUG	Updating add-on states
+1546700029245	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1546700029246	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1546700029247	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1546700029248	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1546700029254	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546700029255	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1546700029256	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1546700029257	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1546700029259	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1546700029259	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1546700029260	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1546700029261	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1546700029263	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546700029265	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546700029265	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546700029265	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546700029266	addons.manager	DEBUG	Starting provider: GMPProvider
+1546700029268	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546700029269	addons.manager	DEBUG	Starting provider: PluginProvider
+1546700029269	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546700029269	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546700029274	addons.manager	DEBUG	Completed startup sequence
+1546700030562	addons.repository	DEBUG	No addons.json found.
+1546700031855	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1546700032151	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Admin\AppData\Local\Temp\anonymous6636315495786413482webdriver-profile\extensions\webdriver-staging
+1546700032152	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1546700032152	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546700032153	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546700032154	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.qa.util.TestBase.initialization(TestBase.java:52)
+	at com.qa.stepDefinitions.HomePageSteps.i_navigate_to_Facebook(HomePageSteps.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
