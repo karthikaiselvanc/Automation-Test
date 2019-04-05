@@ -30,10 +30,13 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
 	WebElement crmLogo;	
 	
+	//String ee1 =prop.getProperty("username");
+	//System.out.println("prop value before executed" +ee1);
 	
 	//Initializing the Page Objects:
 	public LoginPage(){
 		//this.driver=driver;
+		//System.out.println("prop exec");
 		PageFactory.initElements(driver, this);
 		
 	}

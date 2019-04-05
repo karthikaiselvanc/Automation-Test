@@ -31,6 +31,7 @@ public class TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println("base executed");
 	}
 	
 	
